@@ -76,7 +76,7 @@ function AdminPanel() {
         addNewProduct.departure_date=`${addNewProduct.departure_date}T${addNewProduct.departure_time}:00Z`
         addNewProduct.landing_date=`${addNewProduct.landing_date}T${addNewProduct.landing_time}:00Z`
         console.log(addNewProduct)
-        axios.post("http://localhost:3002/admin/flight",{
+        axios.post("https://devrev12121.onrender.com/admin/flight",{
 
             "flight_no":addNewProduct.flight_no,
             "flight_name":addNewProduct.flight_name,
@@ -117,7 +117,7 @@ function AdminPanel() {
         editedProduct.departure_date=`${editedProduct.departure_date}T${editedProduct.departure_time}:00Z`
         editedProduct.landing_date=`${editedProduct.landing_date}T${editedProduct.landing_time}:00Z`
         
-        axios.patch(`http://localhost:3002/admin/flight/${_id}`,
+        axios.patch(`https://devrev12121.onrender.com/admin/flight/${_id}`,
             {
                 "flight_no":editedProduct.flight_no,
                 "flight_name":editedProduct.flight_name,
@@ -173,7 +173,7 @@ function AdminPanel() {
         console.log("______________id",_id,new_Array)
         // const index = products.findIndex((products) => products.id === id);
      
-        axios.delete(`http://localhost:3002/admin/flight/${_id}`)
+        axios.delete(`https://devrev12121.onrender.com/admin/flight/${_id}`)
         .then((response)=>{
             console.log(response.data);
             new_Array.splice(index, 1);

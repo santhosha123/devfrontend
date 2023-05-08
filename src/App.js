@@ -9,12 +9,11 @@ import Mybooking from './components/mybooking';
 import { Auth } from './components/Authentication';
 import AdminPanel from './components/AdminPanel';
 import BookedYet from './components/BookedYet';
-import NavBar from './components/NavBar';
 function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path='' element={<LoginPage/>}></Route>
+      <Route path='/' element={<LoginPage/>}></Route>
       <Route path='/adminlogin' element={<AdminLoginPage/>}></Route>
       <Route path='/admin' element={<AdminPanel/>}></Route>
       <Route path='/bookedyet' element={<BookedYet/>}></Route>
