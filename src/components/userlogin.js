@@ -17,7 +17,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3002/user/login",{"password":password,"email":email})
+    axios.post("https://devrev12121.onrender.com/user/login",{"password":password,"email":email})
     .then(resp=>
         {
           console.log(resp);

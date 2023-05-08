@@ -35,7 +35,7 @@ const FlightList = ({ flights,render,setRender }) => {
   }
 
   const handleBookTicketsSubmitForm = ()=> {
-    axios.post(`http://localhost:3002/user/booktickets`,{
+    axios.post(`https://devrev12121.onrender.com/user/booktickets`,{
 
       "user_id":localStorage.getItem('id'),
       "price":details.count*flightDetails.price,

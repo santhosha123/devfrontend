@@ -7,7 +7,7 @@ function Mybooking() {
     const navigate = useNavigate()
     useEffect(()=>
     {
-        axios.get("http://localhost:3002/user/mybooking",{params:{"user_id":localStorage.getItem("id")}})
+        axios.get("https://devrev12121.onrender.com/user/mybooking",{params:{"user_id":localStorage.getItem("id")}})
         .then(resp=>
             {
                 setTrips(resp.data)

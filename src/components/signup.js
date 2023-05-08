@@ -22,7 +22,7 @@ const SignupForm = () => {
     if(formData.password===formData.confirm_password)
     {
     // Perform validation or API call here
-    axios.post("http://localhost:3002/user/signup",{"user_name":formData.user_name,"password":formData.password,"email":formData.email,"phone_number":formData.phone_number})
+    axios.post("https://devrev12121.onrender.com/user/signup",{"user_name":formData.user_name,"password":formData.password,"email":formData.email,"phone_number":formData.phone_number})
     .then(resp=>
         {
            navigate("/");

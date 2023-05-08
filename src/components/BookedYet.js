@@ -11,7 +11,7 @@ function BookedYet()
 
 
     useEffect(()=>{
-        axios.get('http://localhost:3002/admin/getflights')
+        axios.get('https://devrev12121.onrender.com/admin/getflights')
         .then(response=>
             {
                 setFlight(response.data)

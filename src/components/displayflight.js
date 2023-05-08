@@ -20,7 +20,7 @@ const Displayflight=()=>
 {
   if(date)
   {
-    axios.get("http://localhost:3002/user/getflight",{params:{departure_date:s1}})
+    axios.get("https://devrev12121.onrender.com/user/getflight",{params:{departure_date:s1}})
     .then(res=>
         {
             setflights(res.data)
@@ -32,7 +32,7 @@ const Displayflight=()=>
   }
   else
   {
-    axios.get("http://localhost:3002/admin/flight")
+    axios.get("https://devrev12121.onrender.com/admin/flight")
     .then(res=>
         {
             setflights(res.data)

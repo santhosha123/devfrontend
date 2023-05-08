@@ -22,7 +22,7 @@ function AdminPanel() {
 
 
     useEffect(()=>{
-        axios.get('http://localhost:3002/admin/flight')
+        axios.get('https://devrev12121.onrender.com/admin/flight')
         .then(response=>{
 
             setProducts(response.data)
